@@ -1,0 +1,16 @@
+# Ignore Mac system files
+.DS_Store
+
+# Ignore Python cache (if used)
+__pycache__/
+*.pyc
+
+# Ignore temporary files
+*.log
+*.tmp
+*.bak
+~$*
+
+# Ignore IDE settings
+.vscode/
+.idea/
