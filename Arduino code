@@ -1,0 +1,51 @@
+#include <max6675.h>
+#include <Servo.h>
+
+// Define thermocouple pins
+int thermoSO = 4;
+int thermoCS = 5;
+int thermoSCK = 6;
+
+MAX6675 thermocouple(thermoSCK, thermoCS, thermoSO);
+
+// Define pins
+const int relayPin = 7;     // Relay to heater
+const int actuatorPin = 9;  // Actuator or servo
+const int gasFlowPin = A0;  // Analog input from gas flow sensor
+
+Servo actuator;
+
+float targetTemp = 400.0;  // Target pyrolysis temp (in °C)
+float minTemp = 350.0;     // Minimum safe operating temp
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(relayPin, OUTPUT);
+  digitalWrite(relayPin, LOW);  // Heater OFF initially
+
+  actuator.attach(actuatorPin);
+  actuator.write(0);  // Close valve initially
+
+  Serial.println("System starting...");
+  delay(2000);
+}
+
+void loop() {
+  float currentTemp = thermocouple.readCelsius();
+  int gasFlow = analogRead(gasFlowPin);
+
+  Serial.print("Temp: ");
+  Serial.print(currentTemp);
+  Serial.print(" °C | Gas Flow: ");
+  Serial.println(gasFlow);
+
+  // Control heater
+  if (currentTemp < minTemp) {
+    digitalWrite(relayPin, HIGH);  // Turn ON heater
+  } else if (currentTemp >= targetTemp) {
+    digitalWrite(relayPin, LOW);   // Turn OFF heater
+    actuator.write(90);            // Open outlet valve
+  }
+
+  delay(2000);  // Adjust for stable sensor reading
+}
