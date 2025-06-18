@@ -62,6 +62,7 @@ plastic-waste-fuel-converter/
 ## 🤝 Contributors
 
 - Humphrey Kombe (Project Lead)
+- Masika (Supervisor)
 
 ## 📄 License
 
