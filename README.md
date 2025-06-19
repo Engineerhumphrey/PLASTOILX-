@@ -63,7 +63,7 @@ plastic-waste-fuel-converter/
 
 - Humphrey Kombe (Project Lead)
 - Masika (Supervisor)
-
+- Sande Angore [electrical designer ]
 ## 📄 License
 
 This project is open-source under the MIT License. Feel free to use and modify with attribution.
