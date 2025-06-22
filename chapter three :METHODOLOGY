@@ -1,0 +1,59 @@
+CHAPTER THREE: RESEARCH METHODOLOGY
+
+3.1 Introduction
+This chapter outlines the research methods, design, tools, and procedures used in developing the solar-powered plastic waste-to-fuel converter. It includes the process of prototype development, data collection techniques, system design methodology, and materials used.
+
+3.2 Research Design
+This study adopts a practical, engineering-based research design focused on the development and testing of a prototype system. The approach is largely experimental and iterative, involving design, construction, programming, and performance evaluation of the converter system.
+
+3.3 System Development Methodology
+The system was developed using the V-model design methodology, which allows for verification and validation at every stage of development. The key stages included:
+- Requirement analysis and specification
+- System design and component selection
+- Hardware and software development
+- Integration and testing
+- Evaluation and refinement
+
+3.4 Block Diagram of the System
+The system consists of the following major blocks:
+- Solar power supply unit
+- Microcontroller unit (Arduino)
+- LM35 temperature sensor
+- Heating element (simulated by LED)
+- LCD display for temperature and system status
+- Pyrolysis chamber (mechanical component)
+
+3.5 Tools and Materials
+The following tools and components were used:
+- Arduino Uno microcontroller
+- LM35 temperature sensor
+- 16x2 LCD
+- LEDs for heating simulation
+- Breadboard and jumper wires
+- Proteus software for simulation
+- Solar panel (simulated with DC source)
+- Relay module (optional for future expansion)
+
+3.6 Software Tools
+- Arduino IDE for code development and uploading
+- Proteus for circuit simulation and PCB design
+- MS Word and Excel for documentation and data analysis
+
+3.7 Data Collection
+Data was collected through:
+- Temperature readings from the LM35 sensor
+- Observations of system behavior (heater ON/OFF) at various thresholds
+- LCD output monitoring during tests
+- Output fuel volume (for physical implementation phase)
+
+3.8 System Testing
+The prototype was tested to verify:
+- Accuracy of temperature readings
+- Correct switching of the heating element (LED)
+- Stability of the power supply
+- Readability and correctness of LCD display output
+
+3.9 Limitations of the Methodology
+- Solar power was simulated, not physically harnessed in the current prototype.
+- Only one type of plastic was tested due to time and resource constraints.
+- Heating chamber was represented 
