@@ -47,6 +47,4 @@ The system uses solar concentrators to achieve the high temperatures required fo
 - Masika (Supervisor)
 - Sande Angore [electrical designer ]
 - lincon vincent(programmer0
-## 📄 License
 
-This project is open-source under the MIT License. Feel free to use and modify with attribution.
