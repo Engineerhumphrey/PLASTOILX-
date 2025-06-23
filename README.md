@@ -13,24 +13,6 @@ The system uses solar concentrators to achieve the high temperatures required fo
 - Design a chamber that is lightweight, insulated, and efficient.
 - Demonstrate off-grid energy generation from waste.
 
-## 📂 Folder Structure
-
-```
-plastic-waste-fuel-converter/
-├── mechanical/
-│   ├── chamber_design.step        # CAD design of the pyrolysis chamber
-│   ├── frame_support.png          # Frame structure visual
-├── electrical/
-│   ├── solar_schematic.fzz        # Fritzing schematic for solar power circuit
-│   ├── wiring_diagram.png         # Electrical connections visual
-├── firmware/
-│   ├── controller_code.ino        # Arduino/MCU control code (if used)
-├── docs/
-│   ├── process_flow.png           # System process flow diagram
-│   ├── bill_of_materials.xlsx     # List of components
-├── README.md                      # Project summary and instructions
-```
-
 ## ⚙️ System Components
 
 - **Solar concentrator** (parabolic dish or Fresnel lens)
